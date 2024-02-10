@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {}
 
-module.expports = nextConfig;
+module.exports = nextConfig
 module.exports = {
     images: {
       remotePatterns: [
@@ -14,6 +14,12 @@ module.exports = {
         {
           protocol: 'https',
           hostname: 'i.pinimg.com',
+          port: '',
+          pathname: '/**',
+        },
+        {
+          protocol: 'https',
+          hostname: 'robohash.org',
           port: '',
           pathname: '/**',
         },
